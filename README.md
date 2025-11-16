@@ -1,142 +1,218 @@
 # VideoJuegoEquipo
 
 
-
-INGENIERÍA EN DESARROLLO Y
-GESTIÓN DE SOFTWARE
-
-Creación De Video Juegos
-
-ACTIVIDAD 1
-Introducción y Propuestas
-
-Integrantes
-
-
-
-
-
-Angel Nava				Diego López
-
-Grupo
-IDGS 10-2
-
-Profesor
-Iván Rogelio Chenoweth Chenoweth
-GDD – StickFighter: Minimal Clash
-
-Nombre del juego
+🎮 Nombre del Juego
 StickFighter: Minimal Clash
-(Splash: figura de stickman en pose de pelea sobre fondo simple con degradado.)
 
-Descripción general
-Juego de peleas 1v1 estilo stickman, con controles mínimos:
-Movimiento: arriba, abajo, izquierda, derecha
-Ataque 1: golpe
-Ataque 2: patada
-El enfoque es velocidad, simplicidad y estilo visual minimalista.
+(Splash sugerido: figura de stickman en pose de pelea sobre un fondo simple con degradado)
 
-Género
-Fighting / Acción 1v1
+📘 Descripción General
+
+Juego de peleas 1v1 estilo stickman, con controles mínimos y estética completamente minimalista.
+
+Controles básicos:
+
+Movimiento: ↑ ↓ ← →
+
+Ataque 1: Golpe
+
+Ataque 2: Patada
+
+El enfoque principal es:
+
+Velocidad
+
+Simplicidad
+
+Claridad visual
+
+Combate fluido
+
+🎯 Género
+
+Fighting / Acción (1v1)
+
 Arcade minimalista
 
-Público objetivo
+👥 Público Objetivo
+
 Jugadores casuales 10+
-Fans de juegos rápidos, minimalistas o estilo stickman
-Ideal para web, mobile o escritorio “lite”
 
-Historia
-Sin narrativa compleja. Solo una premisa básica:
-	“En un mundo minimalista, diferentes stickmen entrenan para 	demostrar quién domina el arte del combate simple. No hay reinos ni 	guerras —solo el combate puro.”
+Fans del estilo stickman y juegos rápidos
 
-Personajes
-Todos los personajes son stickmen con colores distintos.
-Stick Red – estilo agresivo, animaciones más rápidas.
-Stick Blue – estilo equilibrado.
-Stick Green – golpes medios, patadas más largas.
-Stick Shadow (oculto) – más velocidad, menos daño.
-(Opcional: cada uno puede tener un modificador mínimo: +5% velocidad, +5% daño, etc.)
+Ideal para plataformas: Web, Mobile o Desktop “lite”
 
-Niveles
-Cada nivel es un escenario minimalista:
-Dojo Minimal: Tatami plano, paredes lisas.
-Arena de campeones.
+📖 Historia
 
-Armas
-(No aplica — juego solo con golpes y patadas.)
+No hay narrativa compleja. Solo una premisa ligera:
 
-Vestimenta
+“En un mundo minimalista, distintos guerreros stickman compiten para demostrar quién domina el arte del combate puro.”
+
+No existen reinos, guerras ni tramas complejas: solo combate.
+
+🧍 Personajes
+
+Todos los personajes son stickmen diferenciados por color:
+
+Stick Red – Estilo agresivo, animaciones rápidas.
+
+Stick Blue – Estilo equilibrado.
+
+Stick Green – Golpes medios, patadas más largas.
+
+Stick Shadow (oculto) – Gran velocidad, menos daño.
+
+Extras opcionales: pequeños modificadores (+5% daño, +5% velocidad).
+
+🌍 Niveles
+
+Escenarios completamente minimalistas:
+
+Dojo Minimal
+Tatami plano, paredes lisas.
+
+Arena de Campeones
+Fondo limpio, iluminación simple.
+
+🗡️ Armas
+
+No aplica — combate exclusivo con golpes y patadas.
+
+👕 Vestimenta
+
 Stickman simple
-Color del personaje
+
+Color asignado por personaje
+
 Opcional: cinta en la cabeza (roja, azul, negra)
-Objetos especiales (props / background)
+
+🎨 Objetos Especiales (Props / Background)
+
+Solo decorativos (no interactuables):
+
 Fondos minimalistas
+
 Siluetas de edificios
-Columnas rectas (dojo)
-Líneas de luz (neon)
-(Solo decorativos, no interactuables.)
 
-Storyboard (bocetos – descripciones)
+Columnas tipo dojo
 
+Líneas de luz (neón)
 
-Guion (muy simple)
-(Diálogos no aplican. Solo textos en pantalla.)
+📝 Storyboard (Bocetos)
+
+(Descripciones en lugar de imágenes)
+
+Stickman en idle con postura de guardia.
+
+Secuencia de golpe simple.
+
+Animación de patada frontal.
+
+Cámara estática, escenarios planos.
+
+🧾 Guion (Minimalista)
+
+No hay diálogos; solo textos en pantalla:
+
 Inicio: “Choose your fighter”
-Inicio del combate: “Round 1 — Fight!”
-Victoria: “Winner!”
-Game Over: “Defeat...”
 
-Música
+Round: “Round 1 — Fight!”
+
+Victoria: “Winner!”
+
+Derrota: “Defeat...”
+
+🎵 Música
+
 General (loop):
-Una pista electrónica minimalista, ritmo rápido, synths ligeros.
-Opcional por nivel:
+
+Electrónica minimalista
+
+Ritmo rápido
+
+Synths ligeros
+
+Por nivel (opcional):
+
 Dojo: pads suaves + percusión baja
-Arena de campeones: synthwave minimal
+
+Arena: synthwave minimal
 
 Efectos de audio
-Golpe: “tuc” seco
+
+Golpe: “tuc”
+
 Patada: “whap”
-Movimientos / dash: swish
-Golpe fuerte / KO: impact thud
-Selección en menús: click suave
 
-Score
-Sistema simple:
+Movimiento: “swish”
+
+KO: impact thud
+
+Selección menú: click suave
+
+⭐ Sistema de Score
+
 Golpe conectado: +50
-Patada conectada: +70
-Victoria de ronda: +200
-(El score solo sirve como métrica arcade.)
-Créditos
-Game Design: Diego & Nava
-Programming: Diego & Nava
-Art (stickman minimal): Diego & Nava
-Sound Direction: Diego & Nava/ Recursos libres
-Music: Librerías libres
-QA Testing: 
 
-Propuesta de Plan de Trabajo
-Semana 1 – Base del juego
-Definición de controles (4 direcciones + golpe + patada)
-Motor del juego (JS/Canvas, Unity Lite, Godot, etc.)
+Patada conectada: +70
+
+Victoria de ronda: +200
+(Sólo funciona como puntuación arcade.)
+
+🎖️ Créditos
+
+Game Design: Diego & Nava
+
+Programming: Diego & Nava
+
+Art (stickman minimal): Diego & Nava
+
+Sound Direction: Diego & Nava / Recursos libres
+
+Music: Librerías libres
+
+QA Testing: Pendiente
+
+📅 Propuesta de Plan de Trabajo
+Semana 1 – Base del Juego
+
+Definición de controles
+
+Configuración del motor (Godot / JS/Canvas / Unity Lite)
+
 Prototipo de movimiento
+
 Prototipo de colisiones básicas
 
 Semana 2 – Combate
-Animaciones básicas (idle, walk, hit, kick, hit reaction)
+
+Animaciones: idle, walk, hit, kick, hit reaction
+
 Sistema de daño
+
 IA simple para práctica
 
-Semana 3 – UI y niveles
-Pantalla inicial
-Selección de personaje
-Implementación de 2 escenarios
+Semana 3 – UI y Niveles
 
-Semana 4 – Audio + pulido
+Pantalla inicial
+
+Selección de personaje
+
+Implementación de 2 escenarios básicos
+
+Semana 4 – Audio + Pulido
+
 Sonidos base
+
 Música general
-Barra de vida y HUD final
+
+Barra de vida y HUD
+
 Corrección de bugs
 
 Semana 5 – Publicación
+
 Build Web / Desktop / Mobile
+
 Testing ligero
+
