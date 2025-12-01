@@ -1,0 +1,58 @@
+[gd_scene load_steps=6 format=3 uid="uid://x2xyndev6hvg"]
+
+[ext_resource type="Script" uid="uid://cfl2sp6ri50lj" path="res://scripts/enemy.gd" id="1_3gvst"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_v6fml"]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"jump",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"walk",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3li8b"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3gvst"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_55jtl"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Enemy" type="CharacterBody2D" parent="."]
+script = ExtResource("1_3gvst")
+
+[node name="Sprite" type="AnimatedSprite2D" parent="Enemy"]
+sprite_frames = SubResource("SpriteFrames_v6fml")
+animation = &"jump"
+
+[node name="BodyCollision" type="CollisionShape2D" parent="Enemy"]
+shape = SubResource("RectangleShape2D_3li8b")
+
+[node name="Hitbox" type="Area2D" parent="Enemy"]
+collision_layer = 2
+collision_mask = 0
+monitoring = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy/Hitbox"]
+shape = SubResource("RectangleShape2D_3gvst")
+
+[node name="Hurtbox" type="Area2D" parent="Enemy"]
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy/Hurtbox"]
+shape = SubResource("RectangleShape2D_55jtl")

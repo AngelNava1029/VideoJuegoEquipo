@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://bctj72rxpv1aw"]
+
+[node name="Hud" type="CanvasLayer"]
+
+[node name="PlayerHP" type="TextureProgressBar" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="EnemyHP" type="TextureProgressBar" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
