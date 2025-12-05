@@ -1,0 +1,31 @@
+[gd_scene load_steps=3 format=3 uid="uid://ccdhacddbd3so"]
+
+[ext_resource type="Texture2D" uid="uid://dql1haayfu08w" path="res://assets/backgrounds/20251122_2305_Pelea de Stickman_simple_compose_01kaqn0sjxespv2f1rat2c4gwy.png" id="1_hydws"]
+[ext_resource type="Script" uid="uid://dmjilayrbtjnr" path="res://scenes/splash_screen.gd" id="1_p4tth"]
+
+[node name="SplashScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_p4tth")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(11, 0)
+layout_mode = 0
+offset_left = 5.0
+offset_top = -18.0
+offset_right = 1148.0
+offset_bottom = 661.0
+texture = ExtResource("1_hydws")
+expand_mode = 1
+
+[node name="PressLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 485.0
+offset_top = 579.0
+offset_right = 693.0
+offset_bottom = 602.0
+text = "pulsa un boton para iniciar"
