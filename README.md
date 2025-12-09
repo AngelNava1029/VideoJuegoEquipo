@@ -152,6 +152,14 @@ Elementos decorativos:
 
 ## **Semana 5 — Publicación**
 - Build Web / Desktop / Mobile  
-- Testing ligero  
+- Testing ligero
+- 
+## **Escenas relevantes**
+<img width="1113" height="584" alt="image" src="https://github.com/user-attachments/assets/e32971b2-ab27-4c87-9173-cd5497ae8a95" />
+<img width="1140" height="620" alt="image" src="https://github.com/user-attachments/assets/03e3fae8-3e56-41a2-9788-99088991dcd0" />
+<img width="1147" height="674" alt="image" src="https://github.com/user-attachments/assets/19260ed9-d66c-45b5-94cf-41678d239657" />
+<img width="1124" height="631" alt="image" src="https://github.com/user-attachments/assets/31d56cdf-cc9e-4f46-a3e9-bf8ed8401171" />
+
+
 
 ---
