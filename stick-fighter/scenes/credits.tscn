@@ -1,0 +1,83 @@
+[gd_scene load_steps=5 format=3 uid="uid://wx3an5kjaf0h"]
+
+[ext_resource type="Texture2D" uid="uid://brclunofhnga6" path="res://assets/backgrounds/20251207_2127_Rey del Campo de Batalla_simple_compose_01kby3b93afgx9xmwesc8jdrsz.png" id="1_0bpdh"]
+[ext_resource type="Texture2D" uid="uid://dbff6ns4juxdw" path="res://sprites/diego.png" id="2_0ctdu"]
+[ext_resource type="Texture2D" uid="uid://brskqywp8kyoa" path="res://sprites/angel.png" id="3_2fbfq"]
+[ext_resource type="AudioStream" uid="uid://ftfj7mmgr3iu" path="res://audio/Young Rich Pixies - Brotherhood.mp3" id="4_2fbfq"]
+
+[node name="Credits" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -2.0
+offset_top = -4.0
+offset_right = -2.0
+offset_bottom = -4.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -6.0
+offset_top = -22.0
+offset_right = 1150.0
+offset_bottom = 726.0
+texture = ExtResource("1_0bpdh")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 266.0
+offset_top = -22.0
+offset_right = 1075.0
+offset_bottom = 781.0
+text = "						Proyecto desarrollado por un equipo independiente compuesto por:
+
+										ANGEL NAVA:
+
+		     			Diseño e implementación del sistema de combate
+
+						Configuración de físicas, colisiones y detección de golpes
+
+						Integración de animaciones y controladores de personajes
+
+						Optimización del rendimiento dentro del motor Godot
+
+						Supervisión general del proyecto y toma de decisiones técnicas
+
+										DIEGO LOPEZ:
+
+						Diseñador de personajes y animaciones
+
+						Creación del estilo visual basado en figuras Stickman
+
+						Ilustración de escenarios y elementos gráficos
+
+						Diseño de interfaces (UI) y menús del juego
+
+						Implementación de efectos visuales y retroalimentación visual para golpes y movimientos especiales
+
+						Apoyo en pruebas de jugabilidad y balanceo de personajes
+"
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 930.0
+offset_top = 34.0
+offset_right = 1092.0
+offset_bottom = 227.0
+texture = ExtResource("2_0ctdu")
+
+[node name="TextureRect3" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 33.0
+offset_top = 37.0
+offset_right = 213.0
+offset_bottom = 236.0
+texture = ExtResource("3_2fbfq")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_2fbfq")
+autoplay = true
+parameters/looping = true

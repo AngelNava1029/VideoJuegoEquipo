@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ftfj7mmgr3iu"
+path="res://.godot/imported/Young Rich Pixies - Brotherhood.mp3-7e94d09675ec6b31567fa773ad6c0290.mp3str"
+
+[deps]
+
+source_file="res://audio/Young Rich Pixies - Brotherhood.mp3"
+dest_files=["res://.godot/imported/Young Rich Pixies - Brotherhood.mp3-7e94d09675ec6b31567fa773ad6c0290.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

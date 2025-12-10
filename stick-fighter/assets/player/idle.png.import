@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://br7fdk1o1k2j7"
-path="res://.godot/imported/dojo.png-6c862e550a11c9dbf134584271435593.ctex"
+uid="uid://cswmkuds0qy3h"
+path="res://.godot/imported/idle.png-89a795d674ff15345971f5296c9aecd0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Background/dojo.png"
-dest_files=["res://.godot/imported/dojo.png-6c862e550a11c9dbf134584271435593.ctex"]
+source_file="res://assets/player/idle.png"
+dest_files=["res://.godot/imported/idle.png-89a795d674ff15345971f5296c9aecd0.ctex"]
 
 [params]
 
