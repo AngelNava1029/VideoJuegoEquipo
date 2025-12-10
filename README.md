@@ -1,5 +1,5 @@
-# 🎮 **GithubPagesLink: **
-## **StickFighter: Minimal Clash**
+
+## **StickFighter**
 
 
 # 📘 **Descripción General**
@@ -159,6 +159,10 @@ Elementos decorativos:
 <img width="1140" height="620" alt="image" src="https://github.com/user-attachments/assets/03e3fae8-3e56-41a2-9788-99088991dcd0" />
 <img width="1147" height="674" alt="image" src="https://github.com/user-attachments/assets/19260ed9-d66c-45b5-94cf-41678d239657" />
 <img width="1124" height="631" alt="image" src="https://github.com/user-attachments/assets/31d56cdf-cc9e-4f46-a3e9-bf8ed8401171" />
+<img width="1117" height="621" alt="image" src="https://github.com/user-attachments/assets/a727d2d5-77d9-4f2e-947b-2b4cbc3bba90" />
+<img width="1129" height="616" alt="image" src="https://github.com/user-attachments/assets/78c51e6d-3905-4669-9590-bc970fac4601" />
+<img width="1128" height="620" alt="image" src="https://github.com/user-attachments/assets/47cd683b-6a55-49eb-be1d-be21cb0ca517" />
+
 
 
 
