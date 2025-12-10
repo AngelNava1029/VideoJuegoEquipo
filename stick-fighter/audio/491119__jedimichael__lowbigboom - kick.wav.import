@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bev82ysp6ggia"
+path="res://.godot/imported/491119__jedimichael__lowbigboom - kick.wav-77ebc885984b4c9c7df9c98883a84733.sample"
+
+[deps]
+
+source_file="res://audio/491119__jedimichael__lowbigboom - kick.wav"
+dest_files=["res://.godot/imported/491119__jedimichael__lowbigboom - kick.wav-77ebc885984b4c9c7df9c98883a84733.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

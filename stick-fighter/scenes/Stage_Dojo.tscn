@@ -1,0 +1,94 @@
+[gd_scene load_steps=11 format=3 uid="uid://dje7khmlf03tx"]
+
+[ext_resource type="PackedScene" uid="uid://6muuheyjkff5" path="res://scenes/Player.tscn" id="1_j122u"]
+[ext_resource type="Texture2D" uid="uid://br7fdk1o1k2j7" path="res://assets/Background/dojo.png" id="1_xdpxr"]
+[ext_resource type="PackedScene" uid="uid://d1fy4n6yw2ewi" path="res://scenes/Enemy.tscn" id="2_f3np0"]
+[ext_resource type="AudioStream" uid="uid://kycjpalqgvev" path="res://audio/Solis - Imposters.mp3" id="7_ow0ng"]
+[ext_resource type="Script" uid="uid://b65lr4o0x5a3n" path="res://scripts/panel.gd" id="8_2imep"]
+[ext_resource type="Texture2D" uid="uid://b7xsdnfhwwb1n" path="res://sprites/20251207_2059_Botón de Reinicio_simple_compose_01kby1sh8me4s8yez2d9ksr28b (2).png" id="8_b38lx"]
+[ext_resource type="Texture2D" uid="uid://nag5n430a4qw" path="res://sprites/20251207_2059_Botón de Reinicio_simple_compose_01kby1sh8me4s8yez2d9ksr28b.png" id="9_ul81j"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f3np0"]
+size = Vector2(1152, 230)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xdpxr"]
+size = Vector2(9, 655)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2evl5"]
+size = Vector2(9.5, 641)
+
+[node name="StageDojo" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_j122u")]
+z_index = 5
+position = Vector2(93, 132)
+scale = Vector2(0.3, 0.3)
+
+[node name="Enemy" parent="." instance=ExtResource("2_f3np0")]
+position = Vector2(935, 138)
+scale = Vector2(0.3, 0.3)
+
+[node name="Ground" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ground"]
+position = Vector2(575, 531)
+shape = SubResource("RectangleShape2D_f3np0")
+debug_color = Color(0.91376907, 9.1448426e-05, 0.7203912, 0.41960785)
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Ground"]
+position = Vector2(-5.5, 317.5)
+shape = SubResource("RectangleShape2D_xdpxr")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Ground"]
+position = Vector2(1159.75, 324.5)
+shape = SubResource("RectangleShape2D_2evl5")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Background" type="TextureRect" parent="Control"]
+z_index = -10
+layout_mode = 0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 1151.0
+offset_bottom = 645.0
+texture = ExtResource("1_xdpxr")
+expand_mode = 1
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Panel" type="Panel" parent="CanvasLayer"]
+offset_left = -66.0
+offset_top = -31.0
+offset_right = -26.0
+offset_bottom = 9.0
+script = ExtResource("8_2imep")
+
+[node name="Button" type="Button" parent="CanvasLayer/Panel"]
+clip_contents = true
+layout_mode = 1
+offset_left = 473.0
+offset_top = 62.0
+offset_right = 581.0
+offset_bottom = 112.0
+icon = ExtResource("8_b38lx")
+
+[node name="Button2" type="Button" parent="CanvasLayer/Panel"]
+layout_mode = 0
+offset_left = 722.0
+offset_top = 60.0
+offset_right = 830.0
+offset_bottom = 108.0
+icon = ExtResource("9_ul81j")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("7_ow0ng")
+autoplay = true
+parameters/looping = false
+
+[connection signal="pressed" from="CanvasLayer/Panel/Button" to="CanvasLayer/Panel" method="_on_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/Panel/Button2" to="CanvasLayer/Panel" method="_on_button_2_pressed"]
